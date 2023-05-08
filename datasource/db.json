@@ -1,0 +1,34 @@
+{
+    "test": [
+        {
+            "navn": "Alfred",
+            "yndlingsfrugt": "Banan",
+            "yndlingsfarve": "Blå",
+            "id": 1
+        },
+        {
+            "navn": "Bent",
+            "yndlingsfrugt": "Æble",
+            "yndlingsfarve": "Grøn",
+            "id": 2
+        },
+        {
+            "navn": "Jan",
+            "yndlingsfrugt": "Pære",
+            "yndlingsfarve": "Blågrøn",
+            "id": 3
+        }
+    ],
+    "subscribers": [
+        {
+            "id": 1,
+            "fullname": "Ib Ibsen",
+            "email": "ib@mail.dk"
+        },
+        {
+            "id": 2,
+            "fullname":"Bo Bosen",
+            "email": "bo@mail.dk"
+        }
+    ]
+}

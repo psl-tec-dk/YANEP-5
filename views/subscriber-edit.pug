@@ -1,0 +1,17 @@
+extends templates/default-template
+        
+block content
+        
+    .page-head Add subscriber
+
+    form(action="", method="post").z-depth-4
+        p Add subscriber
+        input(type="text" name="fullname" placeholder="Dit fulde navn")
+        input(type="text" name="email" placeholder="Email")
+        .ctrl-btns
+            a(href="/subscriber").btn-small.btn-floating
+                i.material-icons arrow_back
+            button(type="reset").btn-small.btn-floating 
+                i.material-icons clear
+            button(type="submit").btn-small.btn-floating 
+                i.material-icons check

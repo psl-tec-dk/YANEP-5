@@ -1,0 +1,30 @@
+const express = require("express");
+
+const router = express.Router();
+
+
+/**
+ * @description Home
+ * @route       GET /
+ */
+router.get("/", (req, res) => {
+    res.render("home");
+});
+
+/**
+ * @description About
+ * @route       GET /about
+ */
+router.get("/about", (req, res) => {
+    res.render("about");
+});
+
+/**
+ * @description Contact
+ * @route       GET /contact
+ */
+router.get("/contact", (req, res) => {
+    res.render("contact");
+});
+
+module.exports = router;

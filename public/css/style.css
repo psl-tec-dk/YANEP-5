@@ -1,0 +1,37 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.page-head {
+    background-color: #1AC6EA;
+    color: blue;
+    padding: 4px 8px
+}
+
+.nav-bar {
+    background-color: #071EEB;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tbl-subsc {
+    width: fit-content;
+    margin: 50px auto;
+    
+}
+
+form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.ctrl-btns {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,28 @@
+extends templates/default-template
+
+block content 
+    .page-head Subscribers
+
+    table.tbl-subsc.highlight.z-depth-4
+        caption 
+            a(href="/subscriber/add").btn-small.btn-floating
+                i.material-icons add
+            br
+            br
+                
+        tr 
+            th Id 
+            th Fullname 
+            th Email
+            th(colspan=2) Action
+        for d in data 
+            tr 
+                td= d.id 
+                td= d.fullname
+                td= d.email
+                td 
+                    a(href="").btn-small.btn-floating
+                        i.small.material-icons edit 
+                td
+                    a(href="").btn-small.btn-floating
+                        i.small.material-icons delete 
