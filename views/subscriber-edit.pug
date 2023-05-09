@@ -4,10 +4,10 @@ block content
         
     .page-head Add subscriber
 
-    form(action="", method="post").z-depth-4
-        p Add subscriber
-        input(type="text" name="fullname" placeholder="Dit fulde navn")
-        input(type="text" name="email" placeholder="Email")
+    form(action=`/subscriber/edit/${data.id}` , method="post").z-depth-4
+        p Edit subscriber
+        input(type="text" name="fullname" placeholder="Dit fulde navn" value=`${data.fullname}`)
+        input(type="text" name="email" placeholder="Email" value=`${data.email}`)
         .ctrl-btns
             a(href="/subscriber").btn-small.btn-floating
                 i.material-icons arrow_back

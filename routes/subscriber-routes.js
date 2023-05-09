@@ -1,5 +1,5 @@
 const express = require("express");
-const { getAll } = require("../dataservice/subscriber-dataservice");
+const dbh = require("../dataservice/subscriber-dataservice");
 const router = express.Router();
 
 
@@ -8,10 +8,8 @@ const router = express.Router();
  * @route       GET /subscriber
  */
 router.get("/", async (req, res) => {
-    const data = await getAll(req, res);
-    // console.log(data);
+    const data = await dbh.getAll(req, res);
     res.render("subscriber", {data});
-    // res.send(` ${req.method} | ${req.path}`);
 });
 
 // /**
@@ -29,15 +27,35 @@ router.get("/", async (req, res) => {
  */
 router.get("/add", (req, res) => {
     res.render("subscriber-add");
-    // res.send("Add subscriber");
-})
+});
 
 /**
  * @description Create subscribers
- * @route       POST /subscriber
+ * @route       POST /subscriber/add
  */
-router.post("/", (req, res) => {
-    res.send(` ${req.method} | ${req.path}`);
+router.post("/add", async (req, res) => {
+    const data = await dbh.create(req, res)
+    console.log(data);
+    res.redirect("/subscriber");
+    // res.send(` ${req.method} | ${req.path}`);
+});
+
+/**
+ * @description Form for editing subscriber
+ * @route       GET /subscriber/edit
+ */
+router.get("/edit/:id", async (req, res) => {
+    const data = await dbh.getByID(req, res);
+    res.render("subscriber-edit", {data});
+});
+
+/**
+ * @description Form for editing subscriber
+ * @route       GET /subscriber/edit
+ */
+router.post("/edit/:id", async (req, res) => {
+    const data = await dbh.update(req, res);
+    res.redirect("/subscriber")
 });
 
 /**
@@ -50,10 +68,11 @@ router.put("/:id", (req, res) => {
 
 /**
  * @description Delete subscriber
- * @route       DELETE /subscriber/:id
+ * @route       GET /subscriber/:id
  */
-router.delete("/:id", (req, res) => {
-    res.send(` ${req.method} | ${req.path} | ${req.params.id}`);
+router.get("/delete/:id", async (req, res) => {
+    const data = await dbh.remove(req, res);
+    res.redirect("/subscriber")
 });
 
 module.exports = router;
