@@ -17,7 +17,7 @@ const update = async (req, res) => {
     console.log(req.body);
     const response = await axios.put(`${DBURL}/${req.params.id}`, req.body);
     return response.data;
-}
+};
 
 const create = async (req, res) => {
     const response = await axios.post(DBURL, req.body);

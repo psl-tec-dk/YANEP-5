@@ -4,31 +4,36 @@
       "navn": "Alfred",
       "yndlingsfrugt": "Banan",
       "yndlingsfarve": "Blå",
-      "id": 1
+      "id": "1"
     },
     {
       "navn": "Bent",
       "yndlingsfrugt": "Æble",
-      "yndlingsfarve": "Grøn",
-      "id": 2
+      "yndlingsfarve": "Rød",
+      "id": "2"
     },
     {
       "navn": "Jan",
       "yndlingsfrugt": "Pære",
       "yndlingsfarve": "Blågrøn",
-      "id": 3
+      "id": "3"
     }
   ],
   "subscribers": [
     {
-      "fullname": "Dan Danielsen",
-      "email": "dan@mail.dk",
-      "id": 1
+      "fullname": "Ding Dong",
+      "email": "ding@dong",
+      "id": "1"
     },
     {
-      "fullname": "Dan Danielsen",
-      "email": "ding@dong",
-      "id": 2
+      "id": "7aec",
+      "fullname": "dr. Salasso",
+      "email": "salasso@salassomail.dk"
+    },
+    {
+      "id": "a552",
+      "fullname": "qaz",
+      "email": "zaq"
     }
   ]
 }

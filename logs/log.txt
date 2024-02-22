@@ -1,0 +1,25 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22.2.2024 10.08.41 Server running in developer mode. Listening at http://localhost:5005
+22.2.2024 10.08.54 GET '/' 200 'OK'
+22.2.2024 10.08.54 GET '/css/style.css' 200 'OK'
+22.2.2024 10.08.58 GET '/about' 200 'OK'
+22.2.2024 10.08.58 GET '/css/style.css' 200 'OK'
+22.2.2024 10.09.00 GET '/contact' 200 'OK'
+22.2.2024 10.09.00 GET '/css/style.css' 200 'OK'
+22.2.2024 10.09.37 GET '/contact' 200 'OK'
+22.2.2024 10.09.37 GET '/css/style.css' 200 'OK'
+22.2.2024 10.09.50 GET '/' 200 'OK'
+22.2.2024 10.09.50 GET '/css/style.css' 200 'OK'
+22.2.2024 10.11.45 GET '/subscriber' 200 'OK'
+22.2.2024 10.11.45 GET '/css/style.css' 200 'OK'
+22.2.2024 10.11.52 GET '/subscriber/add' 200 'OK'
+22.2.2024 10.11.52 GET '/css/style.css' 200 'OK'
+22.2.2024 10.12.15 POST '/subscriber/add' 302 'Found'
+22.2.2024 10.12.15 GET '/subscriber' 200 'OK'
+22.2.2024 10.12.15 GET '/css/style.css' 200 'OK'
+22.2.2024 10.12.59 GET '/subscriber' 200 'OK'
+22.2.2024 10.12.59 GET '/css/style.css' 200 'OK'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22.2.2024 10.15.50 Server running in developer mode. Listening at http://localhost:5005

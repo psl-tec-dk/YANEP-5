@@ -35,7 +35,7 @@ router.get("/add", (req, res) => {
  */
 router.post("/add", async (req, res) => {
     const data = await dbh.create(req, res)
-    console.log(data);
+    // console.log(data);
     res.redirect("/subscriber");
     // res.send(` ${req.method} | ${req.path}`);
 });
